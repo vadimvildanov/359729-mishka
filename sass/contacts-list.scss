@@ -1,0 +1,26 @@
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.contacts-list__item {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-list__what {
+  width: 35%;
+  margin-right: 10px;
+}
+
+.contacts-list__link {
+  width: 60%;
+  text-decoration: none;
+  color: inherit;
+}
