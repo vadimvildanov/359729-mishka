@@ -1,0 +1,17 @@
+.form-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-main .page-title {
+  margin: 0;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.form-main__slogan {
+  margin-left: 0;
+  padding: 30px;
+}

@@ -1,0 +1,21 @@
+.production-process {
+  padding-top: 30px;
+  border: 1px solid #ececec;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+}
+
+.production-process__title {
+  padding-left: 90px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.production-process__text {
+  padding-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}

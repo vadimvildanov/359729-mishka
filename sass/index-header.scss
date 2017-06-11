@@ -3,10 +3,14 @@
   display: flex;
   flex-direction: column;
   padding-top: 75px;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat top;
-  background-size: cover;
   align-items: center;
   text-align: center;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat top;
+  background-size: cover;
+}
+
+.index-header .page-title {
+  margin-bottom: 120px;
 }
 
 .index-header__link {

@@ -8,4 +8,20 @@
   color: #444444;
   text-decoration: none;;
   text-align: center;
+  font-weight: bold;
+
+  &--form {
+  background: transparent;
+  margin-top: 30px;
+  }
+
+  &--catalog {
+    width: auto;
+    background: transparent;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+    margin: auto;
+  }
 }
