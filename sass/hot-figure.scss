@@ -1,0 +1,21 @@
+.hot-figure {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.hot-figure__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.hot-figure__figcaption {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+	.hot-figure {
+		width: 50%;
+	}
+}

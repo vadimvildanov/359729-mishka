@@ -1,0 +1,10 @@
+.logo-footer {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.logo-footer {
+		display: block;
+		min-width: 30%;
+	}
+}

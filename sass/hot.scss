@@ -1,0 +1,44 @@
+.hot {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.hot__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.hot__subtitle {
+  color: #63d1bb;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+	.hot {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.hot__title {
+  		width: 75%;
+	}
+	.hot__subtitle {
+		width: 20%;
+		margin-left: auto;
+	}
+	.hot__text {
+		width: 45%;
+		margin-right: 55%;
+	}
+	.hot__price {
+		width: 45%;
+		margin-right: 55%;
+		text-align: center;
+	}
+}

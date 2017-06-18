@@ -1,0 +1,24 @@
+.copyright {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__academy {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 28px;
+  height: 35px;
+  background: url("../img/htmlacademy.svg") no-repeat center;
+  margin-left: 28px;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    align-items: flex-end;
+    min-width: 30%;
+  }
+}

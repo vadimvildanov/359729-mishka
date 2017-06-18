@@ -1,0 +1,28 @@
+.cite-control {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.cite-control__btn {
+  width: 50%;
+  background: transparent;
+  border: 1px solid #ececec;
+  height: 52px;
+  font-size: 0;
+  cursor: pointer;
+
+  &:first-child {
+    border-right: none;
+  }
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--next {
+    background: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

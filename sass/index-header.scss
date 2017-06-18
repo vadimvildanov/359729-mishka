@@ -1,0 +1,63 @@
+.index-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+  align-items: center;
+  text-align: center;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat top;
+  background-size: cover;
+}
+
+.index-header .page-title {
+  margin-bottom: 120px;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-header__link {
+  width: 100%;
+  min-height: 105px;
+  display: flex;
+  padding-left: 30px;
+  text-align: left;
+  padding-right: 160px;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #63d1bb;
+  text-decoration: none;
+
+  &:first-child {
+    margin-top: 120px;
+  }
+  &--toys {
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: #56c3b2;
+  }
+}
+
+@media (min-width: 768px) {
+  .index-header {
+  padding-left: 30px;
+  padding-right: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+  .index-header__link {
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 115px;
+    font-weight: bold;
+  }
+  .index-header > .page-title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 360px;
+  }
+}
