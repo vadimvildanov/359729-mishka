@@ -6,3 +6,12 @@
   background: #f1f1f1;
   flex-direction: column;
 }
+
+@media (min-width: 768px) {
+	.page-footer {
+		padding-left: 50px;
+		padding-right: 50px;
+		flex-direction: row;
+		align-items: center;
+	}
+}

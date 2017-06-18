@@ -37,3 +37,9 @@
     background-image: url("../img/icon-twitter.svg");
   }
 }
+
+@media (min-width: 768px) {
+  .social {
+    margin: auto;
+  }
+}

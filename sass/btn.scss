@@ -25,3 +25,22 @@
     margin: auto;
   }
 }
+
+@media (min-width: 768px) {
+  .btn {
+    &--catalog {
+      width: calc(100% - 100px);
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 1050px) {
+  .btn {
+    &--catalog {
+      width: 23%;
+      margin: 0;
+      align-self: flex-start;
+    }
+  }
+}

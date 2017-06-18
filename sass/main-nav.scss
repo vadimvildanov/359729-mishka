@@ -1,16 +1,32 @@
 .main-nav {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  max-width: 25px;
+}
+
+.main-nav__toggle {
+  display: block;
   width: 25px;
   height: 25px;
   background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: auto;
 }
 
-.main-nav:active {
+.main-nav__toggle--active {
   background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    max-width: 9999px;
+    width: 100%;
+    margin: 0;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
 }

@@ -4,3 +4,17 @@
   padding-top: 30px;
   align-items: center;
 }
+
+@media (min-width: 768px) {
+	.catalog {
+		width: 100%;
+	}
+}
+
+@media (min-width:1150px) {
+	.catalog {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}

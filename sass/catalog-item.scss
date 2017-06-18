@@ -13,6 +13,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-grow: 2;
 }
 
 .catalog-item__title {
@@ -38,4 +39,39 @@
 .catalog-item__price {
   font-size: 16px;
   font-weight: bold;
+}
+
+.catalog-item__basket {
+  margin-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .catalog-item {
+    flex-direction: row;
+    width: 100%;
+  }
+  .catalog-item__basket {
+    font-size: 0;
+    width: 25px;
+    height: 25px;
+    mask: url(../img/icon-cart.svg) no-repeat center;
+    background: #d8d7d7;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog-item {
+    width: 30%;
+    flex-direction: column;
+    margin-right: 5%;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  .catalog-item > img {
+    width: 100%;
+    height: auto;
+  }
+  
 }
