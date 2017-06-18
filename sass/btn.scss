@@ -32,6 +32,11 @@
       width: calc(100% - 100px);
       text-align: center;
     }
+    &--hot {
+      display: block;
+      width: 45%;
+      margin-right: 55%;
+    }
   }
 }
 

@@ -30,3 +30,22 @@
   background: #62d1ba;
   vertical-align: middle;
 }
+
+@media (min-width: 768px) {
+  .order-fieldset {
+    flex-direction: row;
+  }
+  .order-fieldset__title {
+    width: 25%;
+    display: block;
+
+    &::after {
+      display: none;
+    }
+  }
+  .order-fieldset__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

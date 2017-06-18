@@ -13,3 +13,9 @@
 .hot-figure__figcaption {
   text-align: center;
 }
+
+@media (min-width: 768px) {
+	.hot-figure {
+		width: 50%;
+	}
+}

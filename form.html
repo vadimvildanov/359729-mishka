@@ -10,22 +10,25 @@
 
 <body class="body">
   <header class="page-header">
-    <a class="logo"><img src="img/logo-mobile.svg" alt="Mishka"></a>
-    <nav class="main-nav">
-      <ul class="nav-list">
-        <li class="nav-list__item"><a href="#" class="nav-list__link">Каталог товаров</a></li>
-        <li class="nav-list__item"><a href="#" class="nav-list__link">Вязание на заказ</a></li>
-        <li class="nav-list__item">
-          <form action="#" class="search">
-            <label class="search__label">
-              <input type="search">
-            </label>
-          </form>
-        </li>
-        <li class="nav-list__item"><a href="#" class="nav-list__link nav-list__link--basket">Корзина: пока пуста</a></li>
-      </ul>
-    </nav>
-  </header>
+        <a class="logo"><img src="img/logo-mobile.svg" alt="Mishka"></a>
+        <nav class="main-nav">
+            <span class="main-nav__toggle main-nav__toggle--active"></span>
+            <ul class="nav-list">
+                <li class="nav-list__item"><a href="#" class="nav-list__link">Каталог товаров</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-list__link">Вязание на заказ</a></li>
+                <li class="nav-list__item nav-list__item--search">
+                    <form action="#" class="search">
+                        <label class="search__label">
+                            <span class="search__ico"></span>
+                            <input type="search">
+                        </label>
+                    </form>
+                </li>
+                <li class="nav-list__item nav-list__item--basket"><a href="#" class="nav-list__link nav-list__link--basket">Корзина: пока пуста</a></li>
+                <li class="nav-list__item nav-list__item--delivery">Бесплатная доставка по России</li>
+            </ul>
+        </nav>
+    </header>
   <main class="form-main">
     <h1 class="page-title">Вязание на заказ</h1>
     <p class="form-main__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -34,8 +37,10 @@
         <legend class="order-fieldset__title">Тип</legend>
         <input id="type-accessories" type="radio" name="type" class="order__type-input">
         <input id="type-toys" type="radio" name="type" class="order__type-input">
-        <label for="type-accessories" class="order__type-radio">Аксессуар для интерьера</label>
-        <label for="type-toys" class="order__type-radio">Детская игрушка</label>
+        <div class="order-fieldset__wrapper">
+          <label for="type-accessories" class="order__radio">Аксессуар для интерьера</label>
+          <label for="type-toys" class="order__radio">Детская игрушка</label>
+        </div>
       </fieldset>
       <fieldset class="order-fieldset">
         <legend class="order-fieldset__title">Цвет</legend>
@@ -45,21 +50,25 @@
         <input type="checkbox" class="order__color-input" name="color-black">
         <input type="checkbox" class="order__color-input" name="color-pink">
         <input type="checkbox" class="order__color-input" name="color-orange">
-        <label for="color-white" class="order__color">Белый</label>
-        <label for="color-grey" class="order__color">Серый</label>
-        <label for="color-tiffany" class="order__color">«Тиффани»</label>
-        <label for="color-black" class="order__color">Черный</label>
-        <label for="color-pink" class="order__color">Розовый</label>
-        <label for="color-orange" class="order__color">Оранжевый</label>
+        <div class="order-fieldset__wrapper">
+          <label for="color-white" class="order__color">Белый</label>
+          <label for="color-grey" class="order__color">Серый</label>
+          <label for="color-tiffany" class="order__color">«Тиффани»</label>
+          <label for="color-black" class="order__color">Черный</label>
+          <label for="color-pink" class="order__color">Розовый</label>
+          <label for="color-orange" class="order__color">Оранжевый</label>
+        </div>
       </fieldset>
       <fieldset class="order-fieldset">
         <legend class="order-fieldset__title">ФИО</legend>
+        <div class="order-fieldset__wrapper">
         <label class="order__name">Имя:
           <input type="text" class="order__name-input" placeholder="Введите ваше имя*"></label>
         <label class="order__name">Фамилия:
           <input type="text" class="order__name-input" placeholder="Укажите фамилию*"></label>
         <label class="order__name">Отчество:
           <input type="text" class="order__name-input" placeholder="Отчество, если желаете"></label>
+        </div>  
       </fieldset>
       <fieldset class="order-fieldset">
         <legend class="order-fieldset__title">Тел</legend>

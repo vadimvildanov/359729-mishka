@@ -16,3 +16,14 @@
     margin-bottom: 0px;
   }
 }
+
+@media (min-width: 768px) {
+  .about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-list__item {
+    width: 45%;
+    margin-right: 5%;
+  }
+}

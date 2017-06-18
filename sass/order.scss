@@ -10,13 +10,13 @@
   display: none;
 }
 
-.order__type-radio {
+.order__radio {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.order__type-radio::before {
+.order__radio::before {
   content: "";
   width: 40px;
   height: 40px;
