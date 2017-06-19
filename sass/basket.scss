@@ -1,0 +1,28 @@
+.basket {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.basket {
+		display: block;
+		order: -8;
+		width: 265px;
+		min-height: 88px;
+		padding-top: 30px;
+		text-align: right;
+		padding-left: 70px;
+		position: relative;
+
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 30px;
+			height: 25px;
+			mask: url(../img/icon-cart.svg) no-repeat center;
+			background-color: #d3d2d2;
+			position: absolute;
+			left: 30px;
+			top: 32px;
+		}
+	}
+}

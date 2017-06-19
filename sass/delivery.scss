@@ -1,0 +1,19 @@
+.delivery {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.delivery {
+		display: block;
+	}
+}
+
+@media (min-width:1150px) {
+	.delivery {
+		display: block;
+		width: 50%;
+		margin-left: auto;
+		margin-top: -50px;
+		text-align: right;
+	}
+}

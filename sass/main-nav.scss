@@ -10,7 +10,7 @@
   width: 25px;
   height: 25px;
   background-image: url("../img/icon-menu-open.svg");
-  background-repeat: no-repeat;
+background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -23,8 +23,19 @@
 @media (min-width: 768px) {
   .main-nav {
     margin: 0;
+    max-width: none;
+    width: 48%;
+    margin-right: auto;
   }
   .main-nav__toggle {
-    display: none;
+  display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav {
+    order: -10;
+    width: 400px;
+    align-self: flex-start;
   }
 }

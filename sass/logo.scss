@@ -5,7 +5,16 @@
 @media (min-width: 768px) {
 	.logo {
 		margin-left: 0;
+		margin-right: auto;
+		order: -10;
 	}
 	.logo > img {
+	}
+}
+
+@media (min-width: 1150px) {
+	.logo {
+		order: -9;
+		margin-top: 25px;
 	}
 }
