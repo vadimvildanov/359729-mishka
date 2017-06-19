@@ -34,18 +34,49 @@
 @media (min-width: 768px) {
   .order-fieldset {
     flex-direction: row;
+    padding: 50px;
+    margin-top: 0;
+    &:nth-child(even) {
+      background: #f1f1f1;
+    }
+    &--contacts {
+      flex-wrap: wrap;
+    }
   }
   .order-fieldset__title {
     width: 25%;
     display: block;
-
+    flex-shrink: 0;
+    
     &::after {
       display: none;
+    }
+    &--contacts {
+      align-self: center;
+    }
+    &--email {
+      margin-bottom: 0;
     }
   }
   .order-fieldset__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 2;
+  }
+}
+
+@media (min-width: 1150px) {
+  .order-fieldset__title {
+    width: 16.666%;
+  }
+  .order-fieldset__wrapper {
+    width: 66.666%;
+    flex-grow: 0;
+
+    &--color {
+      width: 75%;
+    }
   }
 }
