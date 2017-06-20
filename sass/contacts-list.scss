@@ -20,8 +20,7 @@
   }
 }
 .contacts-list__what {
-  width: 35%;
-  margin-right: 10px;
+  width: 30%;
 }
 
 .contacts-list__link {
@@ -29,6 +28,10 @@
   text-decoration: none;
   color: inherit;
   flex-grow: 2;
+
+  &--mail {
+    border-bottom: 1px solid #62d1ba;
+  }
 }
 
 @media (min-width: 768px) {
