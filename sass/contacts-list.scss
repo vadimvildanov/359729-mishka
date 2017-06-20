@@ -24,3 +24,34 @@
   text-decoration: none;
   color: inherit;
 }
+
+@media (min-width: 768px) {
+  .contacts-list {
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contacts-list__item {
+    width: 50%;
+  }
+  .contacts-list__what {
+    width: 19%;
+  }
+  .contacts-list__link {
+    flex-grow: 2;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width:1150px) {
+  .contacts-list {
+    width: 40%;
+    margin-right: 60%;
+    padding-right: 20px;
+    padding-left: 0;
+  }
+  .contacts-list__item {
+    width: 100%;
+  }
+}

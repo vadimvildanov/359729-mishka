@@ -40,17 +40,25 @@
     &--form {
       order: -1;
       width: 34%;
-      margin-top: 0;
+    margin-top: 0;
     }
+    &--review {
+      width: 19%;
+      order: -1;
+  }
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1150px) {
   .btn {
     &--catalog {
       width: 23%;
       margin: 0;
       align-self: flex-start;
+    }
+    &--hot {
+      width: 28.57%;
+      margin-left: 16.666%;
     }
   }
 }

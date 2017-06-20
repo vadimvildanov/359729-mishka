@@ -26,3 +26,20 @@
     background-position: center;
   }
 }
+
+@media (min-width: 768px) {
+  .cite-control {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 19%;
+    margin-bottom: 0;
+  }
+
+  .cite-control__btn {
+    &--prev,
+    &--next {
+      border: none;
+    }
+  }
+}

@@ -2,15 +2,17 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 75px;
+  padding-top: 53px;
   align-items: center;
   text-align: center;
   background: url("../img/hero-mobile@1x.jpg") no-repeat top;
   background-size: contain;
   background-color: #f9f9f9;
+  font-size: 19px;
+}
 
 .index-header .page-title {
-  margin-bottom: 120px;
+  margin-bottom: 91px;
   text-align: center;
   width: 80%;
   margin-left: auto;
@@ -29,22 +31,46 @@
   padding-bottom: 30px;
   background-color: #63d1bb;
   text-decoration: none;
+  position: relative;
 
   &:first-child {
     margin-top: 120px;
   }
+  &--interior::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    mask: url("../img/icon-interior.svg") no-repeat center;
+    background-color: #3bb09d;
+    right: 30px;
+    top: 20px;
+  }
   &--toys {
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    background-position: center right;
     background-color: #56c3b2;
+  }
+  &--toys::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    mask: url("../img/icon-toy.svg") no-repeat center;
+    background-color: #35a999;
+    right: 30px;
+    top: 20px;
   }
 }
 
 @media (min-width: 768px) {
+  .index-header .page-title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 360px;
+    width: 66.666%;
+ } 
   .index-header {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   flex-direction: row;
   flex-wrap: wrap;
   }
@@ -54,10 +80,5 @@
     padding-left: 35px;
     padding-right: 115px;
     font-weight: bold;
-  }
-  .index-header > .page-title {
-    font-size: 43px;
-    line-height: 50px;
-    margin-bottom: 360px;
-  }
+  } 
 }

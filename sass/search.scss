@@ -26,8 +26,8 @@
 		width: 25px;
 		height: 25px;
 		display: block;
-		background: url(../img/icon-search.svg) no-repeat center;
-		fill: black;
+		mask: url(../img/icon-search.svg) no-repeat center;
+		background-color: #d3d2d2;
 		margin: auto;
 	}
 }

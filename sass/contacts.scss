@@ -13,7 +13,40 @@
   padding-right: 30px;
 }
 
-.contacts-bottom {
+.contacts__bottom {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .contacts__title {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .contacts__bottom {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:1150px) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 16.666%;
+    padding-right: 50px;
+  }
+  .contacts__title {
+    width: 40%;
+    margin-right: 60%;
+    padding-right: 20px;
+    padding-left: 0;
+  }
+  .contacts__bottom {
+    width: 230px;
+    margin-right: calc(100% - 230px);
+    padding-left: 0;
+  }
 }

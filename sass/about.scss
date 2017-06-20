@@ -11,3 +11,18 @@
   font-size: 25px;
   line-height: 30px;
 }
+
+@media (min-width:768px) {
+	.about {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media (min-width: 1150px) {
+  .about {
+    padding: 0;
+    padding-left: 16.666%;
+    padding-right: 16.666%;
+  }
+}
