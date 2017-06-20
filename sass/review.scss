@@ -1,35 +1,38 @@
 .review {
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 45px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 45px;
+    font-size: 15px;
+    line-height: 30px;
 }
 
 .review__title {
-  font-size: 25px;
-  line-height: 30px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 0px;
+    margin-bottom: 24px;
 }
 
 @media (min-width: 768px) {
-	.review__title {
-		margin: 0;
-		margin-right: auto;
-		order: -2;
-	}
-	.review {
-		display: flex;
-		flex-wrap: wrap;
-		padding-left: 50px;
-		padding-right: 50px;
-	}
+    .review__title {
+        margin: 0;
+        margin-right: auto;
+        order: -2;
+    }
+    .review {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 @media (min-width: 1150px) {
-	.review {
-		padding-left: 16.666%;
-		position: relative;
-		display: flex;
-		flex-wrap: wrap;
-	}
-
+    .review {
+        padding-left: 16.666%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

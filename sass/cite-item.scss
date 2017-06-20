@@ -11,18 +11,22 @@
 .cite-item__content {
   width: 100%;
   margin: 0px;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 }
 
 .cite-item__who {
   font-size: 17px;
   line-height: 24px;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11px;
 }
 
 .cite-item__name {
   font-weight: bold;
   display: block;
+  margin-bottom: 3px;
 }
 
 .cite-item__link {
