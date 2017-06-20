@@ -1,38 +1,44 @@
 .cite-item {
-  width: 100%;
-  padding-left: 0px;
-  margin-left: 0px;
-  &:nth-child(2),
-  &:nth-child(3) {
-    max-width: 0px;
-  }
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px;
+    &:nth-child(2),
+    &:nth-child(3) {
+        max-width: 0px;
+    }
 }
 
 .cite-item__content {
-  width: 100%;
-  margin: 0px;
-  margin-bottom: 27px;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 27px;
 }
 
 .cite-item__who {
-  font-size: 17px;
-  line-height: 24px;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 11px;
+    font-size: 17px;
+    line-height: 24px;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 11px;
 }
 
 .cite-item__name {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 3px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
 }
 
 .cite-item__link {
-  line-height: 30px;
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  color: inherit;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (min-width:768px) {
+    .cite-item__content {
+        margin-bottom: 55px;
+    }
 }

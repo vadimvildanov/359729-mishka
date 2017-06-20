@@ -32,7 +32,11 @@
   background-color: #63d1bb;
   text-decoration: none;
   position: relative;
+  font-weight: bold;    
   font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
 
   &:first-child {
     margin-top: 120px;
@@ -44,8 +48,8 @@
     height: 80px;
     mask: url("../img/icon-interior.svg") no-repeat center;
     background-color: #3bb09d;
-    right: 30px;
-    top: 20px;
+    right: 26px;
+    top: 21px;
   }
   &--toys {
     background-color: #56c3b2;
@@ -57,8 +61,8 @@
     height: 70px;
     mask: url("../img/icon-toy.svg") no-repeat center;
     background-color: #35a999;
-    right: 30px;
-    top: 20px;
+    right: 29px;
+    top: 26px;;
   }
 }
 
@@ -67,7 +71,8 @@
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 360px;
-    width: 66.666%;
+    margin-top: 101px;
+    letter-spacing: 0.95px;
  } 
   .index-header {
   padding-left: 50px;

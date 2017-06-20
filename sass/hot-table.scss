@@ -24,6 +24,13 @@
 	.hot-table {
 		width: 45%;
 		margin-right: 55%;
+		margin-bottom: 35px;
+	}
+
+	.hot-table__column {
+		&:first-child {
+			width: 25px;
+		}
 	}
 }
 

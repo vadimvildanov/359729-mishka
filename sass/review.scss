@@ -19,12 +19,16 @@
         margin: 0;
         margin-right: auto;
         order: -2;
+        line-height: 50px;
+        font-size: 43px;
     }
     .review {
         display: flex;
         flex-wrap: wrap;
         padding-left: 50px;
         padding-right: 50px;
+        padding-top: 40px;
+        padding-bottom: 105px;
     }
 }
 

@@ -32,6 +32,7 @@
     flex-wrap: wrap;
     width: auto;
     width: 100%;
+    letter-spacing: 0.7px;
   }
   .nav-list__item {
     width: auto;
@@ -39,6 +40,7 @@
     align-items: flex-start;
     margin-right: 30px;
     min-height: 50px;
+    padding-top: 9px;
 
     &:nth-child(2n) {
       margin-right: 0;

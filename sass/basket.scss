@@ -1,17 +1,25 @@
 .basket {
 	display: none;
+	text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
 }
 
 @media (min-width: 768px) {
 	.basket {
 		display: block;
 		order: -8;
-		width: 265px;
+		width: 263px;
 		min-height: 88px;
 		padding-top: 30px;
 		text-align: right;
 		padding-left: 70px;
 		position: relative;
+
 
 		&::before {
 			content: "";

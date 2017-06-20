@@ -1,18 +1,20 @@
 .page-footer {
-  display: flex;
-  justify-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  background: #f1f1f1;
-  flex-direction: column;
-  margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #f1f1f1;
+    flex-direction: column;
+    margin-top: auto;
 }
 
 @media (min-width: 768px) {
-	.page-footer {
-		padding-left: 50px;
-		padding-right: 50px;
-		flex-direction: row;
-		align-items: center;
-	}
+    .page-footer {
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 34px;
+        padding-bottom: 26px;
+    }
 }

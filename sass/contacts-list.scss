@@ -40,6 +40,9 @@
     padding-right: 50px;
     flex-direction: row;
     flex-wrap: wrap;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 33px;
   }
   .contacts-list__item {
     width: 50%;
@@ -49,7 +52,7 @@
   }
   .contacts-list__link {
     flex-grow: 2;
-    margin-left: 10px;
+    margin-left: 6px;
   }
 }
 
