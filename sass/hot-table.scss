@@ -10,7 +10,14 @@
 }
 
 .hot-table__column {
-  width: 30%;
+
+	&:first-child {
+		width: 30%;
+		flex-shrink: 0;
+	}
+	&:nth-child(2) {
+		width: 53%;
+	}
 }
 
 @media (min-width: 768px) {

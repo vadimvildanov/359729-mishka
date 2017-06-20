@@ -21,17 +21,18 @@
 
 .index-header__link {
   width: 100%;
-  min-height: 105px;
+  min-height: 103px;
   display: flex;
   padding-left: 30px;
   text-align: left;
   padding-right: 160px;
   color: white;
-  padding-top: 30px;
+  padding-top: 24px;
   padding-bottom: 30px;
   background-color: #63d1bb;
   text-decoration: none;
   position: relative;
+  font-weight: bold;
 
   &:first-child {
     margin-top: 120px;

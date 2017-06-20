@@ -2,18 +2,19 @@
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 30px;
+  padding-top: 7px;
   padding-bottom: 25px;
 }
 
 .hot__title {
   font-size: 25px;
   line-height: 30px;
+  margin-bottom: -12px;
 }
 
 .hot__subtitle {
   color: #63d1bb;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
@@ -31,6 +32,7 @@
 	}
 	.hot__title {
   		width: 75%;
+  		margin-bottom: 0;
 	}
 	.hot__subtitle {
 		width: 20%;
