@@ -1,32 +1,30 @@
 .contacts-map {
-  height: auto;
-  margin-bottom: 32px;
-  align-self: center;
+    height: auto;
+    margin-bottom: 32px;
+    align-self: center;
 }
 
 .contacts-map img {
-  width: 320px;
-  height: auto;
+    width: 320px;
+    height: auto;
 }
 
 @media (min-width:768px) {
-	.contacts-map img {
-		width: 768px;
-	}
-	.contacts-map {
-		margin-bottom: 48px;
-	}
+    .contacts-map img {
+        width: 768px;
+    }
+    .contacts-map {
+        margin-bottom: 48px;
+    }
 }
 
 @media (min-width: 1150px) {
-	.contacts-map img {
-		width: 100%;
-	}
-	.contacts-map {
-		order: 1;
-		margin-left: auto;
-		margin-top: -282px;
-	}
+    .contacts-map img {
+        width: 100%;
+    }
+    .contacts-map {
+        order: 1;
+        margin-left: auto;
+        margin-top: -457px;
+    }
 }
-
-

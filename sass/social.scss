@@ -28,13 +28,23 @@
   display: block;
 
   &--insta {
-    background-image: url("../img/icon-insta.svg");
+    mask: url("../img/icon-insta.svg") no-repeat center;
+    background-color: black;
   }
   &--fb {
-    background-image: url("../img/icon-fb.svg");
+    mask: url("../img/icon-fb.svg") no-repeat center;
+    background-color: black;
   }
   &--tw {
-    background-image: url("../img/icon-twitter.svg");
+    mask: url("../img/icon-twitter.svg") no-repeat center;
+    background-color: black;
+  }
+  &:hover {
+    background-color: #46c1ae;
+  }
+  &:active {
+    background-color: #46c1ae;
+    opacity: 0.2;
   }
 }
 

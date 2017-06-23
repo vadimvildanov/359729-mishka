@@ -1,20 +1,21 @@
 .delivery {
-	display: none;
+    display: none;
 }
 
 @media (min-width: 768px) {
-	.delivery {
-		display: block;
-	}
+    .delivery {
+        display: block;
+        margin-top: 10px;
+    }
 }
 
 @media (min-width:1150px) {
-	.delivery {
-		display: block;
-		width: 400px;
-		margin-left: auto;
-		margin-top: -50px;
-		text-align: right;
-		padding-top: 11px;
-	}
+    .delivery {
+        display: block;
+        width: 400px;
+        margin-left: auto;
+        margin-top: -52px;
+        text-align: right;
+        padding-top: 0px;
+    }
 }

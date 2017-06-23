@@ -1,20 +1,21 @@
 .catalog {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
-	.catalog {
-		width: 100%;
-	}
+    .catalog {
+        width: 100%;
+    }
 }
 
 @media (min-width:1150px) {
-	.catalog {
-		width: 100%;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
+    .catalog {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
 }

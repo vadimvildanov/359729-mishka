@@ -6,11 +6,42 @@
     <title>Мишка Форма</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style type="text/css">
+    html {
+        background: url(img/mishka-form-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+    }
+    
+    @media (min-width:768px) {
+        html {
+            background-image: url(img/mishka-form-tablet.jpg);
+        }
+    }
+    
+    @media (min-width:1150px) {
+        html {
+            background-image: url(img/mishka-form-desktop.jpg);
+        }
+    }
+    
+    BODY {
+        opacity: .5;
+    }
+    </style>
+    <link rel="stylesheet" href="node_modules/pixel-glass/styles.css">
+    <script src="node_modules/pixel-glass/script.js"></script>
 </head>
 
 <body class="body">
     <header class="page-header">
-        <a class="logo"><img src="img/logo-mobile.svg" alt="Mishka"></a>
+        <a class="logo">
+            <picture>
+                <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                <img src="img/logo-mobile.svg" alt="Mishka">
+            </picture>
+        </a>
         <nav class="main-nav">
             <span class="main-nav__toggle main-nav__toggle--active"></span>
             <ul class="nav-list">
@@ -33,7 +64,7 @@
         <h1 class="page-title">Вязание на заказ</h1>
         <p class="form-main__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form action="" class="order">
-            <div class="order-fieldset">
+            <div class="order-fieldset order-fieldset--type">
                 <div class="order-fieldset__title">Тип</div>
                 <input id="type-accessories" type="radio" name="type" class="order__type-input">
                 <input id="type-toys" type="radio" name="type" class="order__type-input">
@@ -42,7 +73,7 @@
                     <label for="type-toys" class="order__radio">Детская игрушка</label>
                 </div>
             </div>
-            <div class="order-fieldset">
+            <div class="order-fieldset order-fieldset--color">
                 <div class="order-fieldset__title">Цвет</div>
                 <input type="checkbox" class="order__color-input" name="color-white">
                 <input type="checkbox" class="order__color-input" name="color-grey">
@@ -59,7 +90,7 @@
                     <label for="color-orange" class="order__color">Оранжевый</label>
                 </div>
             </div>
-            <div class="order-fieldset">
+            <div class="order-fieldset order-fieldset--name">
                 <div class="order-fieldset__title">ФИО</div>
                 <div class="order-fieldset__wrapper">
                     <label class="order__name">Имя:
@@ -79,7 +110,7 @@
                 <div class="order-fieldset__title order-fieldset__title--contacts order-fieldset__title--email">e-mail</div>
                 <input type="email" class="order__email" placeholder="Ваш Email*">
             </div>
-            <div class="order-fieldset">
+            <div class="order-fieldset order-fieldset--comment">
                 <div class="order-fieldset__title">Доп</div>
                 <div class="order-fieldset__wrapper">
                     <textarea class="order__comment" placeholder="Опишите все пожелания к заказу"></textarea>
@@ -92,7 +123,7 @@
         </form>
     </main>
     <footer class="page-footer">
-        <div class="logo-footer"><img src="img/logo-mobile.svg"></div>
+        <div class="logo-footer"><img src="img/logo-footer.svg"></div>
         <ul class="social">
             <li class="social__item"><a href="#" class="social__link social__link--insta">Мы в Instagram</a></li>
             <li class="social__item"><a href="#" class="social__link social__link--fb">Мы в Facebook</a></li>

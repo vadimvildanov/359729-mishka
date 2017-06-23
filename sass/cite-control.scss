@@ -1,45 +1,56 @@
 .cite-control {
-  display: flex;
-  margin-bottom: 40px;
+    display: flex;
+    margin-bottom: 40px;
 }
 
 .cite-control__btn {
-  width: 50%;
-  background: transparent;
-  border: 1px solid #ececec;
-  height: 52px;
-  font-size: 0;
-  cursor: pointer;
-
-  &:first-child {
-    border-right: none;
-  }
-
-  &--prev {
-    background-image: url("../img/icon-left-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  &--next {
-    background: url("../img/icon-right-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+    width: 50%;
+    background: transparent;
+    border: 1px solid #ececec;
+    height: 52px;
+    font-size: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:first-child {
+        border-right: none;
+    }
+    &--prev {
+        background-image: url("../img/icon-left-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &--next {
+        background: url("../img/icon-right-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.4;
+    }
 }
 
 @media (min-width: 768px) {
-  .cite-control {
-    position: absolute;
-    bottom: 28px;
-    right: 0;
-    width: 26%;
-    margin-bottom: 0;
-  }
-
-  .cite-control__btn {
-    &--prev,
-    &--next {
-      border: none;
+    .cite-control {
+        position: absolute;
+        bottom: 28px;
+        right: 0;
+        width: 26%;
+        margin-bottom: 0;
     }
-  }
+    .cite-control__btn {
+        &--prev,
+        &--next {
+            border: none;
+        }
+    }
+}
+
+@media (min-width:1150px) {
+    .cite-control {
+        width: 20%;
+        margin-bottom: 3px;
+    }
 }

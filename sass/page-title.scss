@@ -1,12 +1,31 @@
 .page-title {
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: bold;
-  padding-left: 30px;
-  padding-right: 30px;
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
 }
 
 @media (min-width: 768px) {
-	.page-title {
-	}
+    .page-title {
+        font-size: 43px;
+        line-height: 50px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            background: url(../img/bg-zigzag-fill.svg);
+            height: 34px;
+            bottom: -19px;
+            left: 0;
+        }
+    }
+}
+
+@media (min-width:1150px) {
+    .page-title {
+        font-size: 53px;
+        line-height: 57px;
+    }
 }

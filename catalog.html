@@ -6,11 +6,42 @@
     <title>Мишка Каталог</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style type="text/css">
+    html {
+        background: url(img/mishka-catalog-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+    }
+    
+    @media (min-width:768px) {
+        html {
+            background-image: url(img/mishka-catalog-tablet.jpg);
+        }
+    }
+    
+    @media (min-width:1150px) {
+        html {
+            background-image: url(img/mishka-catalog-desktop.jpg);
+        }
+    }
+    
+    BODY {
+        opacity: .5;
+    }
+    </style>
+    <link rel="stylesheet" href="node_modules/pixel-glass/styles.css">
+    <script src="node_modules/pixel-glass/script.js"></script>
 </head>
 
 <body class="body">
     <header class="page-header">
-        <a class="logo"><img src="img/logo-mobile.svg" alt="Mishka"></a>
+        <a class="logo">
+            <picture>
+                <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                <img src="img/logo-mobile.svg" alt="Mishka">
+            </picture>
+        </a>
         <nav class="main-nav">
             <span class="main-nav__toggle main-nav__toggle--active"></span>
             <ul class="nav-list">
@@ -33,42 +64,73 @@
         <h1 class="page-title">Каталог товаров</h1>
         <section class="catalog">
             <article class="catalog-item">
-                <img src="img/photo-1-mobile@1x.jpg" alt="#" width="260" height="195">
+                <div class="catalog-item__img">
+                    <picture>
+                        <source media="(min-width:1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x" sizes="334px ">
+                        <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="#">
+                    </picture>
+                </div>
                 <div class="catalog-item__content">
                     <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
                     <p class="catalog-item__info">Рост 30 см, вес 200 г</p>
-                    <span class="catalog-item__price">1 200 руб.</span>
-                    <span class="catalog-item__basket">В корзину</span>
+                    <div class="catalog-item__bottom">
+                        <span class="catalog-item__price">1 200 руб.</span>
+                        <span class="catalog-item__basket">В корзину</span></div>
                 </div>
             </article>
             <article class="catalog-item">
-                <img src="img/photo-2-mobile@1x.jpg" alt="#" width="260" height="195">
+                <div class="catalog-item__img">
+                    <picture>
+                        <source media="(min-width:1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                        <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="#">
+                    </picture>
+                </div>
                 <div class="catalog-item__content">
                     <h2 class="catalog-item__title">Корзинка для белья</h2>
                     <p class="catalog-item__info">Диаметр 15 см, высота 10 см</p>
-                    <span class="catalog-item__price">690 руб.</span>
-                    <span class="catalog-item__basket">В корзину</span>
+                    <div class="catalog-item__bottom">
+                        <span class="catalog-item__price">690 руб.</span>
+                        <span class="catalog-item__basket">В корзину</span></div>
                 </div>
             </article>
             <article class="catalog-item">
-                <img src="img/photo-3-mobile@1x.jpg" alt="#" width="260" height="195">
+                <div class="catalog-item__img">
+                    <picture>
+                        <source media="(min-width:1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                        <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="#">
+                    </picture>
+                </div>
                 <div class="catalog-item__content">
                     <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
                     <p class="catalog-item__info">Диаметр 30 см, высота 30 см</p>
-                    <span class="catalog-item__price">1 500 руб.</span>
-                    <span class="catalog-item__basket">В корзину</span>
+                    <div class="catalog-item__bottom">
+                        <span class="catalog-item__price">1 500 руб.</span>
+                        <span class="catalog-item__basket">В корзину</span></div>
                 </div>
             </article>
         </section>
         <footer class="production-process">
             <h2 class="production-process__title">Процесс производства</h2>
-            <video class="production-process__video" src="#"></video>
+            <div class="production-process__img">
+                <picture>
+                    <source media="(min-width:1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                    <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                    <img class="production-process__video" src="img/video-mobile@1x.jpg" scrset="img/video-mobile@2x.jpg 2x">
+                </picture>
+            </div>
             <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a href="#" class="btn btn--catalog">Сделать заказ</a>
         </footer>
     </main>
     <footer class="page-footer">
-        <div class="logo-footer"><img src="img/logo-mobile.svg"></div>
+        <div class="logo-footer">
+            <picture>
+                <img src="img/logo-footer.svg" alt="Mishka">
+            </picture>
+        </div>
         <ul class="social">
             <li class="social__item"><a href="#" class="social__link social__link--insta">Мы в Instagram</a></li>
             <li class="social__item"><a href="#" class="social__link social__link--fb">Мы в Facebook</a></li>
@@ -79,8 +141,5 @@
         </section>
     </footer>
 </body>
-<script>
-document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-</script>
 
 </html>

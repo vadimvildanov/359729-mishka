@@ -1,42 +1,46 @@
 .hot-table {
-  width: 100%;
-  margin-bottom: 25px;
+    width: 100%;
+    margin-bottom: 25px;
 }
 
 .hot-table__row {
-  height: 39px;
-  width: 100%;
-  border-bottom: 1px solid #ececec;
+    height: 39px;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
 }
 
 .hot-table__column {
-
-	&:first-child {
-		width: 30%;
-		flex-shrink: 0;
-	}
-	&:nth-child(2) {
-		width: 53%;
-	}
+    &:first-child {
+        width: 30%;
+        flex-shrink: 0;
+    }
+    &:nth-child(2) {
+        width: 53%;
+    }
 }
 
 @media (min-width: 768px) {
-	.hot-table {
-		width: 45%;
-		margin-right: 55%;
-		margin-bottom: 35px;
-	}
-
-	.hot-table__column {
-		&:first-child {
-			width: 25px;
-		}
-	}
+    .hot-table {
+        width: 45%;
+        margin-right: 55%;
+        margin-bottom: 35px;
+    }
+    .hot-table__column {
+        &:first-child {
+            width: 25%;
+        }
+    }
 }
 
 @media (min-width: 1150px) {
-	.hot-table {
-		width: 28.57%;
-		margin-left: 16.666%;
-	}
+    .hot-table {
+        width: 28.57%;
+        margin-left: 16.666%;
+        margin-bottom: 90px;
+    }
+    .hot-table__column {
+        &:first-child {
+            width: 25%;
+        }
+    }
 }

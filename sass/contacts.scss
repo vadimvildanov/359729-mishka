@@ -24,7 +24,17 @@
         padding-right: 50px;
         font-size: 43px;
         line-height: 50px;
-        margin-bottom:33px;
+        margin-bottom: 33px;
+        position: relative;
+        &::after {
+            position: absolute;
+            width: 52px;
+            height: 90px;
+            content: "";
+            background: url(../img/icon-flag.svg) no-repeat center;
+            right: 7%;
+            top: -15px;
+        }
     }
     .contacts__bottom {
         width: 290px;
@@ -32,7 +42,7 @@
         margin-right: auto;
     }
     .contacts {
-      margin-bottom: 17px;
+        margin-bottom: 17px;
     }
 }
 
@@ -41,18 +51,26 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-left: 16.666%;
+        padding-left: 19.5%;
         padding-right: 50px;
+        padding-top: 70px;
+        margin-bottom: 10px;
     }
     .contacts__title {
         width: 40%;
         margin-right: 60%;
         padding-right: 20px;
         padding-left: 0;
+        font-size: 53px;
+        line-height: 57px;
+        margin-top: 73px;
+        &::after {
+            left: -112px;
+        }
     }
     .contacts__bottom {
-        width: 230px;
-        margin-right: calc(100% - 230px);
+        width: 260px;
+        margin-right: calc(100% - 260px);
         padding-left: 0;
     }
 }

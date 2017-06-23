@@ -8,11 +8,12 @@
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 75px;
+    padding-top: 72px;
     padding-bottom: 75px;
     text-align: center;
     background: #f1f1f1;
     margin-top: 0;
+    letter-spacing: 0.9px;
 }
 
 @media (min-width: 768px) {
@@ -25,5 +26,18 @@
         padding-right: 50px;
         padding-left: 50px;
         text-align: center;
+        letter-spacing: 1px;
+        font-size: 43px;
+        line-height: 50px;
+        padding-top: 96px;
+        margin-bottom: 73px;
+    }
+}
+
+@media (min-width:1150px) {
+    .catalog-main .page-title {
+        line-height: 57px;
+        font-size: 53px;
+        margin-bottom: 144px;
     }
 }

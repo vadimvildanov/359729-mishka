@@ -1,44 +1,91 @@
 .about-list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
 }
 
 .about-list__item {
-  padding-top: 41px;
-  margin-bottom: 42px;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
-
-  &:last-child {
-    margin-bottom: 0px;
-  }
+    padding-top: 41px;
+    margin-bottom: 42px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    &:last-child {
+        margin-bottom: 0px;
+    }
 }
 
 @media (min-width: 768px) {
-  .about-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .about-list__item {
-    width: 45%;
-    margin-right: 5%;   
-    padding-top: 44px;
-    margin-bottom: 67px;    
-    font-size: 20px;
-    line-height: 22px;
-  }
+    .about-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .about-list__item {
+        width: 45%;
+        margin-right: 5%;
+        padding-top: 44px;
+        margin-bottom: 67px;
+        font-size: 20px;
+        line-height: 22px;
+        position: relative;
+        &::before {
+            width: 60px;
+            height: 60px;
+            background-color: #63d1bb;
+            content: "";
+            position: absolute;
+            left: -10px;
+            top: -22px;
+        }
+        &--eco {
+          order: -6;
+        }
+        &--style {
+          order: -4;
+        }
+        &--like {
+          order: -2;
+        }
+        &--love {
+          order: -5;
+        }
+        &--brand {
+          order: -3;
+        }
+        &--gift {
+          order: -1;
+        }
+        &--eco::before {
+            mask: url(../img/icon-feature-1.svg) no-repeat center;
+        }
+        &--style::before {
+            mask: url(../img/icon-feature-3.svg) no-repeat center;
+        }
+        &--like::before {
+            mask: url(../img/icon-feature-5.svg) no-repeat center;
+        }
+        &--love::before {
+            mask: url(../img/icon-feature-2.svg) no-repeat center;
+        }
+        &--brand::before {
+            mask: url(../img/icon-feature-4.svg) no-repeat center;
+        }
+        &--gift::before {
+            mask: url(../img/icon-feature-6.svg) no-repeat center;
+        }
+    }
 }
 
 @media (min-width: 1150px) {
-  .about-list__item {
-    width: 40%;
-    margin-right: 10%;
-  }
+    .about-list__item {
+        width: 40%;
+        margin-right: 10%;
+    }
+    .about-list {
+        margin-top: 13px;
+    }
 }
-

@@ -1,6 +1,6 @@
 .basket {
-	display: none;
-	text-decoration: none;
+    display: none;
+    text-decoration: none;
     color: black;
     font-size: 17px;
     font-weight: bold;
@@ -9,27 +9,38 @@
 }
 
 @media (min-width: 768px) {
-	.basket {
-		display: block;
-		order: -8;
-		width: 263px;
-		min-height: 88px;
-		padding-top: 30px;
-		text-align: right;
-		padding-left: 70px;
-		position: relative;
-
-
-		&::before {
-			content: "";
-			display: inline-block;
-			width: 30px;
-			height: 25px;
-			mask: url(../img/icon-cart.svg) no-repeat center;
-			background-color: #d3d2d2;
-			position: absolute;
-			left: 30px;
-			top: 32px;
-		}
-	}
+    .basket {
+        display: block;
+        order: -8;
+        width: 263px;
+        min-height: 88px;
+        padding-top: 30px;
+        text-align: right;
+        padding-left: 70px;
+        position: relative;
+        transition: all 0.2s;
+        &:hover {
+            color: rgba(0, 0, 0, 0.8);
+            &::before {
+                background-color: #63d1bb;
+            }
+        }
+        &:active {
+            opacity: 0.5;
+            &::before {
+                background-color: #63d1bb;
+            }
+        }
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 25px;
+            mask: url(../img/icon-cart.svg) no-repeat center;
+            background-color: #d3d2d2;
+            position: absolute;
+            left: 30px;
+            top: 32px;
+        }
+    }
 }
